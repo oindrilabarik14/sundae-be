@@ -31,10 +31,10 @@ public class MovieRestRepoImpl implements MovieRepo {
         WebClient.builder()
             .baseUrl("https://imdb8.p.rapidapi.com")
             .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
-            .defaultHeader("x-rapidapi-key", "95a115e155msh8280114e82979b2p1cc483jsn01ca25889f32")
+            .defaultHeader("x-rapidapi-key", "")
             .build();
     Map<String, String> defaultRequestParams = new HashMap<>();
-    defaultRequestParams.put("apikey", "9a07a46e");
+    defaultRequestParams.put("apikey", "");
     omdbApiWebClient =
         WebClient.builder()
             .baseUrl("https://omdbapi.com")
